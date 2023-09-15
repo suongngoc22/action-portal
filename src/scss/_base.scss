@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Sen", "Poppins", sans-serif;
+}
+
+html {
+    /* trượt xuống nội dung khi user bấm vào tab trên nav */
+    scroll-behavior: smooth;
+}
+
+body {
+    
+}
+
+button {
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: var(--smooth);
+}
+
+button:hover {
+    color: white;
+    background-color: #0C1122;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+:root {
+    --main-dark: #0C1122;
+    --main-gray: #5E626F;
+    --text-gray: #5E626F;
+    --active: #FF5352;
+    --smooth: all 0.3s ease-in;
+}
