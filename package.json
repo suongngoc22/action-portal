@@ -9,8 +9,8 @@
     "deploy": "gh-pages -d dist",
     "build": "vite build",
     "preview": "vite preview",
-    "sass:dev": "sass --watch --embed-source-map src/scss:public/styles",
-    "sass:prod": "sass --no-source-map --style compressed src/scss:public/styles"
+    "sass:dev": "sass --watch --embed-source-map src/scss:styles",
+    "sass:prod": "sass --no-source-map --style compressed src/scss:styles"
   },
   "devDependencies": {
     "sass": "^1.65.1",
