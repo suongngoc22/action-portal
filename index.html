@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/images/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- google fonts -->
@@ -12,11 +12,9 @@
     <!-- main css -->
     <link rel="stylesheet" href="styles/main.css">
     <title>Job Portal Website - Action</title>
+    <script src="main.js" defer></script>
   </head>
   <body>
-    <!-- <div id="app"></div> -->
-    <!-- <script type="module" src="/main.js"></script> -->
-
     <header>
       <nav class="navbar">
         <diV class="logo">
@@ -38,14 +36,48 @@
             </button>
           </div>
         </div>
+        <div class="hamburger">
+          <img src="/images/arrow_bottom.svg" />
+        </div>
       </nav>
+
+      <!-- nav modal -->
+      <div class="navbar-modal">
+        <div class="menu-close">
+          <img src="images/search_button.svg" />
+        </div>
+        <div class="menu">
+          <ul class="menu-links">
+            <li>
+              <a href="#" class="active">Home</a>
+            </li>
+            <li>
+              <a href="#">Features</a>
+            </li>
+            <li>
+              <a href="#">Post A Job</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+          </ul>
+          <div class="menu-button">
+            <button>
+              Log in
+            </button>
+            <button>
+              Get started
+            </button>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- Hero -->
     <section class="hero padding-10">
       <div class="hero-content">
         <h1>Live Your Passion With Employment.</h1>
-        <p>Search and find your dream job is now easier than ever.
+        <p class="desc">Search and find your dream job is now easier than ever.
           Just browse a job and apply if you need to.
         </p>
         <div class="search-bar">
@@ -59,16 +91,16 @@
           </div>
           <div class="divider"></div>
           <div class="search-input">
-            <img src="images/location.svg" alt="location icon"/>
+            <img src="images/location.svg" alt="location icon" />
             <input 
               type="text" 
               name="location" 
               id="location"
               placeholder="Denmark" />
-            <img src="images/arrow_bottom.svg" alt="arrow icon" style="width: 12px;"/>
+            <img src="images/arrow_bottom.svg" alt="arrow icon" />
           </div>
           <div class="search-button">
-            <img src="images/search_button.svg" alt="search icon"/>
+            <img src="images/search.svg" alt="search icon"/>
           </div>
         </div>
       </div>
@@ -79,8 +111,8 @@
 
     <!-- How it works -->
     <section class="how-it-works padding-10 margin-60">
-      <h2>Easy way to job</h2>
-      <p>
+      <h2 class="title">Easy way to job</h2>
+      <p class="desc">
         Search and find your dream job is now easier than ever. 
         Just browse a job and apply if you need to.
       </p>
@@ -115,8 +147,8 @@
         <img src="images/about.svg" alt="about"/>
       </div>
       <div class="about-content">
-        <h2>We help jobseekers to find their jobs</h2>
-        <p>
+        <h2 class="title">We help jobseekers to find their jobs</h2>
+        <p class="desc">
           We are here to help jobseekers connect wuth the organizer and 
           companies. We are providing the best opportunies to professionals people.
         </p>
@@ -141,7 +173,7 @@
     <!-- Category -->
     <div class="category padding-10 margin-60">
       <div class="category-content">
-        <h2>Explore jobs by category</h2>
+        <h2 class="title">Explore jobs by category</h2>
         <div></div>
       </div>
       <div class="category-container">
