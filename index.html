@@ -8,7 +8,7 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Sen:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Sen:wght@500;700&display=swap" rel="stylesheet">
     <!-- main css -->
     <link rel="stylesheet" href="styles/main.css">
     <title>Job Portal Website - Action</title>
@@ -37,14 +37,14 @@
           </div>
         </div>
         <div class="hamburger">
-          <img src="/images/arrow_bottom.svg" />
+          <img src="/images/hambergur.svg" />
         </div>
       </nav>
 
       <!-- nav modal -->
       <div class="navbar-modal">
         <div class="menu-close">
-          <img src="images/search_button.svg" />
+          <img src="images/close.svg" sizes="48" />
         </div>
         <div class="menu">
           <ul class="menu-links">
@@ -91,7 +91,7 @@
           </div>
           <div class="divider"></div>
           <div class="search-input">
-            <img src="images/location.svg" alt="location icon" />
+            <img src="images/globe.svg" alt="location icon" />
             <input 
               type="text" 
               name="location" 
@@ -110,7 +110,7 @@
     </section>
 
     <!-- How it works -->
-    <section class="how-it-works padding-10 margin-60">
+    <section class="how-it-works padding-10 padding-60">
       <h2 class="title">Easy way to job</h2>
       <p class="desc">
         Search and find your dream job is now easier than ever. 
@@ -118,21 +118,21 @@
       </p>
       <div class="card-container">
         <!-- Card 1 -->
-        <div class="card-item">
+        <div class="card-item box-container">
           <img src="images/card1.svg" alt="card 1" />
           <h3>
             Build and boost your great profile
           </h3>
         </div>
         <!-- Card 2 -->
-        <div class="card-item">
+        <div class="card-item box-container">
           <img src="images/card2.svg" alt="card 1" />
           <h3>
             Directly upload your professional CV
           </h3>
         </div>
         <!-- Card 3 -->
-        <div class="card-item">
+        <div class="card-item box-container">
           <img src="images/card3.svg" alt="card 1" />
           <h3>
             Scheduling for your proper interview
@@ -142,7 +142,7 @@
     </section>
 
     <!-- About -->
-    <section class="about padding-10 margin-60">
+    <section class="about padding-10 padding-60">
       <div>
         <img src="images/about.svg" alt="about"/>
       </div>
@@ -155,7 +155,7 @@
         <div class="check-container">
           <div class="check-item">
             <img src="images/check_icon.svg"/>
-          <span>Connect easily with organizers</span>
+            <span>Connect easily with organizers</span>
           </div>
           <div class="check-item">
             <img src="images/check_icon.svg"/>
@@ -171,10 +171,17 @@
     </section>
 
     <!-- Category -->
-    <div class="category padding-10 margin-60">
+    <section class="category padding-10 padding-60">
       <div class="category-content">
         <h2 class="title">Explore jobs by category</h2>
-        <div></div>
+        <div class="pagination-container">
+          <div class="pagination-item arrow-previous">
+            <img src="images/chevron_left.svg"/>
+          </div>
+          <div class="pagination-item arrow-next active">
+            <img src="images/chevron_right.svg"/>
+          </div>
+        </div>
       </div>
       <div class="category-container">
         <div class="category-item active">
@@ -186,10 +193,86 @@
           </h3>
           <span>100 Job Vacancy</span>
         </div>
+        <div class="category-item">
+          <div class="category-item-boxIcon">
+            <img src="images/category1.svg" />
+          </div>
+          <h3>
+            UI/UX Designer
+          </h3>
+          <span>100 Job Vacancy</span>
+        </div>
         
       </div>
-    </div>
+    </section>
 
+    <!-- Jobs -->
+    <section class="jobs padding-10 padding-60">
+      <h2 class="title">Find your job</h2>
+      <p class="desc">
+        Search and find your dream job is now easier than ever. Just browse a job and apply if you need to.
+      </p>
+      <div class="job-container" id="job-list"></div>
+      <div>
+        <button>Show all jobs</button>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="testimonial padding-10 padding-60">
+      <div class="testimonial-video">
+        <video preload="none" playsinline muted>
+          <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="play-button">
+          <img src="images/play.svg" alt="Play Button">
+        </div>
+      </div>
+      <div class="testimonial-content">
+        <h2 class="title">What jobseeker have to say</h2>
+        <p class="desc">
+          “This is the great and best platform to finding the job. I got a very goog job by this platform. I am very grateful to them for making such a amazing platform”
+        </p>
+        <div class="author">
+          <h3>
+            Ben Stokes
+          </h3>
+          <span>
+            UI Designer @Shopify
+          </span>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="">
+      <div class="newsleter padding-10 padding-60">
+        <h2 class="title">Get update about job</h2>
+        <p class="desc">
+          Subscribe our newsletter for getting the update of suitable and perfect jobs. Your dream job is here.
+        </p>
+        <div class="email-container">
+          <input type="text" placeholder="Email address" >
+          <button>Subscribe</button>
+        </div>
+      </div>
+      <div class="footer-content-container padding-10">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <diV class="logo">
+              <a href="#">Action</a>
+            </diV>
+            <div class="social">
+  
+            </div>
+          </div>
+          <div class="footer-links" id="footer-links-list">
+          </div>
+        </div>
+        <hr class="divider-horizontal" >
+        <p class="copyright">Copyright © 2022 All Rights webdesign.gdn Reserved</p>
+      </div>
+    </footer>
   </body>
 </html>
 <!-- https://www.figma.com/file/L4FjiQF5MCq9MPmOdH4PWT/Job-Portal-Website---Action?type=design&node-id=2%3A5&mode=design&t=TsgysFQnbp6pPwPG-1 -->

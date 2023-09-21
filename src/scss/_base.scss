@@ -35,10 +35,18 @@ ul, li {
     list-style: none;
 }
 
+input {
+    outline: none;
+    border: none;
+    font-family: 'Poppins';
+}
+
 :root {
     --main-dark: #0C1122;
     --main-gray: #5E626F;
+    --light-gray: #B3B7C5;
     --active: #FF5352;
+    --light-active: #FF6652;
     --smooth: all 0.3s ease-in;
 }
 
@@ -46,7 +54,6 @@ ul, li {
     padding: 0 5rem;
 }
 
-.margin-60 {
-    margin-top: 60px;
-    margin-bottom: 60px;
+.padding-60 {
+    padding-block: 60px;
 }
