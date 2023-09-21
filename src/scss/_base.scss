@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    font-family: "Sen", "Poppins", sans-serif;
+    font-family: "Poppins";
 }
 
 html {
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    
+
 }
 
 button {
@@ -45,6 +45,7 @@ input {
     --main-dark: #0C1122;
     --main-gray: #5E626F;
     --light-gray: #B3B7C5;
+    --dark-blue: #1E253A;
     --active: #FF5352;
     --light-active: #FF6652;
     --smooth: all 0.3s ease-in;

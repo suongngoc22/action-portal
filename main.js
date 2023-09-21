@@ -132,3 +132,50 @@ footerLinks.forEach(function(footerLink) {
   var footerLinkItem = createFooterLinksItem(footerLink);
   footerLinksList.innerHTML += footerLinkItem;
 });
+
+// render category item
+const categories = [
+  {
+    "name": "UI/UX Designer",
+    "vacancy": "100 Job Vacancy",
+    "icon": "Orion_page.svg",
+    "bgColorIcon": "#0074D9"
+  },
+  {
+    "name": "Web Developer",
+    "vacancy": "100 Job Vacancy",
+    "icon": "Orion_code-window.svg",
+    "bgColorIcon": "#0091D0"
+  },
+  {
+    "name": "Video Animator",
+    "vacancy": "100 Job Vacancy",
+    "icon": "Orion_video-camera.svg",
+    "bgColorIcon": "#00B7B4"
+  },
+  {
+    "name": "Graphic Illustrator",
+    "vacancy": "100 Job Vacancy",
+    "icon": "Orion_megaphone.svg",
+    "bgColorIcon": "#1F0A0A"
+  }
+]
+
+function createCategoryItem(data) {
+  const item = `<div class="category-item">
+    <div class="category-item-boxIcon" style="background-color: ${data.bgColorIcon};">
+      <img src="images/${data.icon}" />
+    </div>
+    <h3>
+      ${data.name}
+    </h3>
+    <span>${data.vacancy}</span>
+  </div>`;
+  return item;
+};
+
+const categoryList = document.getElementById('category-list');
+categories.forEach(function(category) {
+  var categoryItem = createCategoryItem(category);
+  categoryList.innerHTML += categoryItem;
+});
