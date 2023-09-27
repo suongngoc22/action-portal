@@ -108,11 +108,8 @@
 
 // Header 
 header {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    padding: 20px 5rem;
+    margin-block: 20px;
     z-index: 10;
 }
 
@@ -120,9 +117,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
-    
+
     .menu {
         justify-content: space-between;
 
@@ -149,9 +144,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    padding-top: 8rem;
     align-items: center;
-    background: linear-gradient(360deg, rgba(246, 248, 255, 0.00) 0%, #F1F4FF 100%);
     gap: 60px;
     
     .hero-content {
@@ -351,6 +344,7 @@ header {
 
 .category-container {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 
 }
@@ -602,7 +596,7 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
+    width: 100%;
     align-items: center;
 
     .newsleter {
@@ -615,9 +609,8 @@ footer {
 
         .email-container {
             position: absolute;
-            bottom: 0;
             left: 50%;
-            transform: translate(-50%, 18px);
+            transform: translate(-50%, 30px);
             background-color: white;
             box-shadow: 10px 18px 56px 5px rgba(0, 0, 0, 0.15);
             padding: 5px;
@@ -649,6 +642,8 @@ footer {
         width: 100%;
         padding-top: 120px;
         padding-bottom: 30px;
+        align-items: center;
+
 
         .footer-content {
             display: grid;
@@ -825,8 +820,7 @@ footer {
     }
 }
 
-/* Small screens, laptops – 769px — 1024px */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (max-width: 800px) {
     .hamburger {
         display: block;
     }
@@ -834,6 +828,11 @@ footer {
     .navbar .menu {
         display: none !important;
     }
+}
+
+/* Small screens, laptops – 769px — 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
 }
 
 /* Desktops, large screens – 1025px — 1200px */

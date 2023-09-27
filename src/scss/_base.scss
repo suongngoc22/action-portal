@@ -11,7 +11,9 @@ html {
 }
 
 body {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 button {
@@ -52,7 +54,8 @@ input {
 }
 
 .padding-10 {
-    padding: 0 5rem;
+    margin-inline: 60px;
+    max-width: 1200px;
 }
 
 .padding-60 {

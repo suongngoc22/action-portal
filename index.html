@@ -15,99 +15,100 @@
     <script src="main.js" defer></script>
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <diV class="logo">
-          <a href="#">Action</a>
-        </diV>
-        <div class="menu">
-          <div class="menu-links">
-            <a href="#" class="active">Home</a>
-            <a href="#">Features</a>
-            <a href="#">Post A Job</a>
-            <a href="#">About Us</a>
-          </div>
-          <div class="menu-button">
-            <button>
-              Log in
-            </button>
-            <button>
-              Get started
-            </button>
-          </div>
-        </div>
-        <div class="hamburger">
-          <img src="/images/hambergur.svg" />
-        </div>
-      </nav>
-
-      <!-- nav modal -->
-      <div class="navbar-modal">
-        <div class="menu-close">
-          <img src="images/close.svg" sizes="48" />
-        </div>
-        <div class="menu">
-          <ul class="menu-links">
-            <li>
+    <div style="display: flex; align-items: center; width: 100%; flex-direction: column; justify-content: center; background: linear-gradient(360deg, rgba(246, 248, 255, 0) 0%, #F1F4FF 100%);">
+      <header class="padding-10">
+        <nav class="navbar">
+          <diV class="logo">
+            <a href="#">Action</a>
+          </diV>
+          <div class="menu">
+            <div class="menu-links">
               <a href="#" class="active">Home</a>
-            </li>
-            <li>
               <a href="#">Features</a>
-            </li>
-            <li>
               <a href="#">Post A Job</a>
-            </li>
-            <li>
               <a href="#">About Us</a>
-            </li>
-          </ul>
-          <div class="menu-button">
-            <button>
-              Log in
-            </button>
-            <button>
-              Get started
-            </button>
+            </div>
+            <div class="menu-button">
+              <button>
+                Log in
+              </button>
+              <button>
+                Get started
+              </button>
+            </div>
           </div>
-        </div>
-      </div>
-    </header>
+          <div class="hamburger">
+            <img src="/images/hambergur.svg" />
+          </div>
+        </nav>
 
-    <!-- Hero -->
-    <section class="hero padding-10">
-      <div class="hero-content">
-        <h1 class="title">Live Your Passion With Employment.</h1>
-        <p class="desc">Search and find your dream job is now easier than ever.
-          Just browse a job and apply if you need to.
-        </p>
-        <div class="search-bar">
-          <div class="search-input">
-            <img src="images/search.svg" alt="search icon"/>
-            <input 
-              type="text" 
-              name="job" 
-              id="job"
-              placeholder="Job title or keyword" />
+        <!-- nav modal -->
+        <div class="navbar-modal">
+          <div class="menu-close">
+            <img src="images/close.svg" sizes="48" />
           </div>
-          <div class="divider"></div>
-          <div class="search-input">
-            <img src="images/globe.svg" alt="location icon" />
-            <input 
-              type="text" 
-              name="location" 
-              id="location"
-              placeholder="Denmark" />
-            <img src="images/arrow_bottom.svg" alt="arrow icon" />
-          </div>
-          <div class="search-button">
-            <img src="images/search.svg" alt="search icon"/>
+          <div class="menu">
+            <ul class="menu-links">
+              <li>
+                <a href="#" class="active">Home</a>
+              </li>
+              <li>
+                <a href="#">Features</a>
+              </li>
+              <li>
+                <a href="#">Post A Job</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+            </ul>
+            <div class="menu-button">
+              <button>
+                Log in
+              </button>
+              <button>
+                Get started
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="hero-image">
-        <img src="images/Illustrations.svg" />
-      </div>
-    </section>
+      </header>
+      <!-- Hero -->
+      <section class="hero padding-10">
+        <div class="hero-content">
+          <h1 class="title">Live Your Passion With Employment.</h1>
+          <p class="desc">Search and find your dream job is now easier than ever.
+            Just browse a job and apply if you need to.
+          </p>
+          <div class="search-bar">
+            <div class="search-input">
+              <img src="images/search.svg" alt="search icon"/>
+              <input 
+                type="text" 
+                name="job" 
+                id="job"
+                placeholder="Job title or keyword" />
+            </div>
+            <div class="divider"></div>
+            <div class="search-input">
+              <img src="images/globe.svg" alt="location icon" />
+              <input 
+                type="text" 
+                name="location" 
+                id="location"
+                placeholder="Denmark" />
+              <img src="images/arrow_bottom.svg" alt="arrow icon" />
+            </div>
+            <div class="search-button">
+              <img src="images/search.svg" alt="search icon"/>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="images/Illustrations.svg" />
+        </div>
+      </section>
+    </div>
 
     <!-- How it works -->
     <section class="how-it-works padding-10 padding-60">
@@ -238,8 +239,8 @@
           <button>Subscribe</button>
         </div>
       </div>
-      <div class="footer-content-container padding-10">
-        <div class="footer-content">
+      <div class="footer-content-container">
+        <div class="footer-content padding-10">
           <div class="footer-logo">
             <diV class="logo">
               <a href="#">Action</a>
