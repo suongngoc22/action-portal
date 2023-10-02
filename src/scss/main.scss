@@ -23,21 +23,24 @@
     transition: all 0.25s ease-in-out;
 
     &:hover {
-        border: transparent;
+        border: 1px solid transparent;
         box-shadow: 0px 18px 56px 0px rgba(0, 0, 0, 0.05);
     }
 }
 
 // divider COMMON
 .divider-horizontal {
+    width: 100%;
+    border: none;
     border-top: 1px solid #E9E9EE;
 }
 
 .divider-vertical {
+    height: 100%;
+    border: none;
     border-left: 1px solid #E9E9EE;
 }
 
-.category .category-item,
 .how-it-works .card-item h3 {
     color: var(--main-dark);
     max-width: 253px;
@@ -117,6 +120,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-inline: 60px;
 
     .menu {
         justify-content: space-between;
@@ -191,7 +195,6 @@ header {
     align-items: center;
     margin-left: 10px;
     position: relative;
-    flex: 1;
 }
 
 .search-input {
@@ -202,11 +205,10 @@ header {
             margin-right: 16px;
         }
 
-        &:nth-child(2) {
-            position: absolute;
-            width: 14px;
-            right: 15px;
+        &:nth-child(3) {
+            margin-left: 16px;
         }
+
     }
 }
 
@@ -328,7 +330,6 @@ header {
 
 
 .category {
-    gap: 20px;
     
     .category-content {
         display: flex;
@@ -382,7 +383,11 @@ header {
         color: white;
     
         .category-item-boxIcon {
-            background: white;
+            background: white !important;
+
+            img {
+                filter: invert(43%) sepia(41%) saturate(1593%) hue-rotate(318deg) brightness(104%) contrast(101%) !important; //active color
+            }
         }
     }
 }
@@ -643,12 +648,14 @@ footer {
         padding-top: 120px;
         padding-bottom: 30px;
         align-items: center;
-
+        padding-inline: 60px;
 
         .footer-content {
             display: grid;
             grid-template-columns: 200px auto;
             margin-bottom: 38px;
+            gap: 60px;
+            width: 100%;
 
             .footer-logo {
 
@@ -671,6 +678,7 @@ footer {
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        cursor: pointer;
                         
                         &:nth-child(1) {
                             background-color: var(--active);
@@ -703,9 +711,13 @@ footer {
                     
                     li {
                         padding-block: 6px;
+
                         a {
-                            color: var(--light-gray);; 
-    
+                            color: var(--light-gray);
+
+                            &:hover {
+                                color: white;
+                            }
                         }
                     }
                 }

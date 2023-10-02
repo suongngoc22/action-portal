@@ -1,6 +1,5 @@
 
 function toggleModal () {
-  console.log("hhehhe");
   const modal = document.querySelector(".navbar-modal");
   modal.classList.toggle("visible");
 }
@@ -10,6 +9,16 @@ const closeBtn = document.querySelector(".menu-close");
 hamburgerBtn.addEventListener("click", toggleModal);
 closeBtn.addEventListener("click", toggleModal);
 
+// add active class menu
+const menu_links = document.getElementById("menu-links");
+const menu_links_items = menu_links.getElementsByClassName("menu-links-item");
+for (var i = 0; i < menu_links_items.length; i++) {
+  menu_links_items[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
 
 // render jobs
 const jobs = [

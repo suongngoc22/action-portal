@@ -16,17 +16,17 @@
   </head>
   <body>
     <div style="display: flex; align-items: center; width: 100%; flex-direction: column; justify-content: center; background: linear-gradient(360deg, rgba(246, 248, 255, 0) 0%, #F1F4FF 100%);">
-      <header class="padding-10">
-        <nav class="navbar">
+      <header>
+        <nav class="navbar padding-10">
           <diV class="logo">
             <a href="#">Action</a>
           </diV>
           <div class="menu">
-            <div class="menu-links">
-              <a href="#" class="active">Home</a>
-              <a href="#">Features</a>
-              <a href="#">Post A Job</a>
-              <a href="#">About Us</a>
+            <div class="menu-links" id="menu-links">
+              <a href="#" class="menu-links-item active">Home</a>
+              <a href="#" class="menu-links-item">Features</a>
+              <a href="#" class="menu-links-item">Post A Job</a>
+              <a href="#About" class="menu-links-item">About Us</a>
             </div>
             <div class="menu-button">
               <button>
@@ -74,7 +74,7 @@
         </div>
       </header>
       <!-- Hero -->
-      <section class="hero padding-10">
+      <section class="hero margin-10">
         <div class="hero-content">
           <h1 class="title">Live Your Passion With Employment.</h1>
           <p class="desc">Search and find your dream job is now easier than ever.
@@ -89,7 +89,7 @@
                 id="job"
                 placeholder="Job title or keyword" />
             </div>
-            <div class="divider"></div>
+            <div class="divider-vertical"></div>
             <div class="search-input">
               <img src="images/globe.svg" alt="location icon" />
               <input 
@@ -111,7 +111,7 @@
     </div>
 
     <!-- How it works -->
-    <section class="how-it-works padding-10 padding-60">
+    <section class="how-it-works margin-10 padding-60">
       <h2 class="title">Easy way to job</h2>
       <p class="desc">
         Search and find your dream job is now easier than ever. 
@@ -143,7 +143,9 @@
     </section>
 
     <!-- About -->
-    <section class="about padding-10 padding-60">
+    <section 
+      class="about margin-10 padding-60"
+      id="About">
       <div>
         <img src="images/about.svg" alt="about"/>
       </div>
@@ -172,7 +174,7 @@
     </section>
 
     <!-- Category -->
-    <section class="category padding-10 padding-60">
+    <section class="category margin-10 padding-60">
       <div class="category-content">
         <h2 class="title">Explore jobs by category</h2>
         <div class="pagination-container">
@@ -190,7 +192,7 @@
     </section>
 
     <!-- Jobs -->
-    <section class="jobs padding-10 padding-60">
+    <section class="jobs margin-10 padding-60">
       <h2 class="title">Find your job</h2>
       <p class="desc">
         Search and find your dream job is now easier than ever. Just browse a job and apply if you need to.
@@ -202,7 +204,7 @@
     </section>
 
     <!-- Testimonial -->
-    <section class="testimonial padding-10 padding-60">
+    <section class="testimonial margin-10 padding-60">
       <div class="testimonial-video">
         <video preload="none" playsinline muted>
           <source src="sample-video.mp4" type="video/mp4">
@@ -229,7 +231,7 @@
     </section>
 
     <footer class="">
-      <div class="newsleter padding-10 padding-60">
+      <div class="newsleter margin-10 padding-60">
         <h2 class="title">Get update about job</h2>
         <p class="desc">
           Subscribe our newsletter for getting the update of suitable and perfect jobs. Your dream job is here.
@@ -240,7 +242,7 @@
         </div>
       </div>
       <div class="footer-content-container">
-        <div class="footer-content padding-10">
+        <div class="footer-content margin-10">
           <div class="footer-logo">
             <diV class="logo">
               <a href="#">Action</a>
@@ -260,7 +262,7 @@
           <div class="footer-links" id="footer-links-list">
           </div>
         </div>
-        <hr class="divider-horizontal" >
+        <hr class="divider-horizontal margin-10" >
         <p class="copyright">Copyright © 2022 All Rights webdesign.gdn Reserved</p>
       </div>
     </footer>
