@@ -15,8 +15,8 @@
     <script src="main.js" defer></script>
   </head>
   <body>
-    <div style="display: flex; align-items: center; width: 100%; flex-direction: column; justify-content: center; background: linear-gradient(360deg, rgba(246, 248, 255, 0) 0%, #F1F4FF 100%); padding-inline: 60px;">
-      <header class="max-content">
+    <div class="hero-wrapper" >
+      <header class="header">
         <nav class="navbar">
           <diV class="logo">
             <a href="#">Action</a>
@@ -74,30 +74,32 @@
         </div>
       </header>
       <!-- Hero -->
-      <section class="hero max-content">
+      <section class="hero padding-y-60">
         <div class="hero-content">
           <h1 class="title">Live Your Passion With Employment.</h1>
           <p class="desc">Search and find your dream job is now easier than ever.
             Just browse a job and apply if you need to.
           </p>
           <div class="search-bar">
-            <div class="search-input">
-              <img src="images/search.svg" alt="search icon"/>
-              <input 
-                type="text" 
-                name="job" 
-                id="job"
-                placeholder="Job title or keyword" />
-            </div>
-            <div class="divider-vertical"></div>
-            <div class="search-input">
-              <img src="images/globe.svg" alt="location icon" />
-              <input 
-                type="text" 
-                name="location" 
-                id="location"
-                placeholder="Denmark" />
-              <img src="images/arrow_bottom.svg" alt="arrow icon" />
+            <div class="input-group">
+              <div class="search-input">
+                <img src="images/search.svg" alt="search icon"/>
+                <input 
+                  type="text" 
+                  name="job" 
+                  id="job"
+                  placeholder="Job title or keyword" />
+              </div>
+              <div class="divider-vertical"></div>
+              <div class="search-input">
+                <img src="images/globe.svg" alt="location icon" />
+                <input 
+                  type="text" 
+                  name="location" 
+                  id="location"
+                  placeholder="Denmark" />
+                <img src="images/arrow_bottom.svg" alt="arrow icon" />
+              </div>
             </div>
             <div class="search-button">
               <img src="images/search.svg" alt="search icon"/>
@@ -111,7 +113,7 @@
     </div>
 
     <!-- How it works -->
-    <section class="how-it-works margin-10 padding-60 max-content">
+    <section class="how-it-works padding-y-60">
       <h2 class="title">Easy way to job</h2>
       <p class="desc">
         Search and find your dream job is now easier than ever. 
@@ -144,9 +146,9 @@
 
     <!-- About -->
     <section 
-      class="about margin-10 padding-60 max-content"
+      class="about padding-y-60"
       id="About">
-      <div>
+      <div class="about-image">
         <img src="images/about.svg" alt="about"/>
       </div>
       <div class="about-content">
@@ -174,7 +176,7 @@
     </section>
 
     <!-- Category -->
-    <section class="category margin-10 padding-60 max-content">
+    <section class="category padding-y-60">
       <div class="category-content">
         <h2 class="title">Explore jobs by category</h2>
         <div class="pagination-container">
@@ -192,7 +194,7 @@
     </section>
 
     <!-- Jobs -->
-    <section class="jobs margin-10 padding-60 max-content">
+    <section class="jobs padding-y-60">
       <h2 class="title">Find your job</h2>
       <p class="desc">
         Search and find your dream job is now easier than ever. Just browse a job and apply if you need to.
@@ -204,10 +206,10 @@
     </section>
 
     <!-- Testimonial -->
-    <section class="testimonial margin-10 padding-60 max-content">
+    <section class="testimonial padding-y-60">
       <div class="testimonial-video">
-        <video preload="none" playsinline muted>
-          <source src="sample-video.mp4" type="video/mp4">
+        <video width="400" height="400" controls >
+          <source src="images/zit con.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="play-button">
@@ -231,7 +233,7 @@
     </section>
 
     <footer class="">
-      <div class="newsleter margin-10 padding-60">
+      <div class="newsleter padding-y-60">
         <h2 class="title">Get update about job</h2>
         <p class="desc">
           Subscribe our newsletter for getting the update of suitable and perfect jobs. Your dream job is here.
@@ -242,7 +244,7 @@
         </div>
       </div>
       <div class="footer-content-container">
-        <div class="footer-content margin-10 max-content">
+        <div class="footer-content ">
           <div class="footer-logo">
             <diV class="logo">
               <a href="#">Action</a>
@@ -262,8 +264,8 @@
           <div class="footer-links" id="footer-links-list">
           </div>
         </div>
-        <hr class="divider-horizontal margin-10" >
-        <p class="copyright">Copyright © 2022 All Rights webdesign.gdn Reserved</p>
+        <hr class="divider-horizontal" >
+        <p class="copyright">Copyright © 2023 All Rights suongngoc22 Reserved</p>
       </div>
     </footer>
   </body>
@@ -271,3 +273,8 @@
 <!-- https://www.figma.com/file/L4FjiQF5MCq9MPmOdH4PWT/Job-Portal-Website---Action?type=design&node-id=2%3A5&mode=design&t=TsgysFQnbp6pPwPG-1 -->
 <!-- https://www.youtube.com/watch?v=3t2H8aqOkeQ -->
 <!-- https://www.youtube.com/watch?v=RroDdybvu5s -->
+
+<!-- NOTE 3/10 
+1. List ngang cho scroll
+2. mấy cái hình cho wrap, height: auto; max-width: 100%
+-->

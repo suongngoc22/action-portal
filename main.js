@@ -45,6 +45,30 @@ const jobs = [
     company: "Guru",
     postedTime: "2 days ago",
     logo: "job_Guru.svg"
+  },
+  {
+    title: "Senior Designer-Mobile Apps Team",
+    location: "Bankok",
+    employmentType: "Full-time",
+    company: "Peopleperhour",
+    postedTime: "2 days ago",
+    logo: "job_Peopleperhour.svg"
+  },
+  {
+    title: "Senior Designer-Mobile Apps Team",
+    location: "Bankok",
+    employmentType: "Full-time",
+    company: "Upwork",
+    postedTime: "2 days ago",
+    logo: "job_Upwork.svg"
+  },
+  {
+    title: "Graphic Designer- Illustrations expert",
+    location: "Bankok",
+    employmentType: "Full-time",
+    company: "Guru",
+    postedTime: "2 days ago",
+    logo: "job_Guru.svg"
   }
 ]
 
@@ -151,6 +175,12 @@ const categories = [
     "bgColorIcon": "#0074D9"
   },
   {
+    "name": "UI/UX Designer",
+    "vacancy": "100 Job Vacancy",
+    "icon": "Orion_page.svg",
+    "bgColorIcon": "#0074D9"
+  },
+  {
     "name": "Web Developer",
     "vacancy": "100 Job Vacancy",
     "icon": "Orion_code-window.svg",
@@ -161,6 +191,18 @@ const categories = [
     "vacancy": "100 Job Vacancy",
     "icon": "Orion_video-camera.svg",
     "bgColorIcon": "#00B7B4"
+  },
+  {
+    "name": "Graphic Illustrator",
+    "vacancy": "100 Job Vacancy",
+    "icon": "Orion_megaphone.svg",
+    "bgColorIcon": "#1F0A0A"
+  },
+  {
+    "name": "Graphic Illustrator",
+    "vacancy": "100 Job Vacancy",
+    "icon": "Orion_megaphone.svg",
+    "bgColorIcon": "#1F0A0A"
   },
   {
     "name": "Graphic Illustrator",
