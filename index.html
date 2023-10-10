@@ -48,9 +48,9 @@
             <img src="images/close.svg" sizes="48" />
           </div>
           <div class="menu">
-            <ul class="menu-links">
+            <ul class="menu-links" id="menu-links">
               <li>
-                <a href="#" class="menu-links-item">Home</a>
+                <a href="#" class="menu-links-item active">Home</a>
               </li>
               <li>
                 <a href="#" class="menu-links-item">Features</a>
@@ -93,11 +93,12 @@
               <div class="divider-vertical"></div>
               <div class="search-input">
                 <img src="images/globe.svg" alt="location icon" />
-                <input 
-                  type="text" 
-                  name="location" 
-                  id="location"
-                  placeholder="Denmark" />
+                <select name="location" id="location">
+                  <option value="Denmark">Denmark</option>
+                  <option value="Italy">Italy</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="Germany">Germany</option>
+                </select>
                 <img src="images/arrow_bottom.svg" alt="arrow icon" />
               </div>
             </div>
