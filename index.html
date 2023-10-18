@@ -15,6 +15,9 @@
     <script src="main.js" defer></script>
   </head>
   <body>
+    <div class="dot">
+
+    </div>
     <div class="hero-wrapper" >
       <header class="header">
         <nav class="navbar">
@@ -91,15 +94,18 @@
                   placeholder="Job title or keyword" />
               </div>
               <div class="divider-vertical"></div>
-              <div class="search-input">
+              <div class="search-dropdown">
+                <!-- https://www.youtube.com/watch?v=OesmxT-kGSM -->
+                <!-- https://www.youtube.com/watch?v=41zkymkTCbc -->
                 <img src="images/globe.svg" alt="location icon" />
-                <select name="location" id="location">
-                  <option value="Denmark">Denmark</option>
-                  <option value="Italy">Italy</option>
-                  <option value="United Kingdom">United Kingdom</option>
-                  <option value="Germany">Germany</option>
-                </select>
+                <input class="textBox" name="location" id="location" placeholder="Choose location" readonly />
                 <img src="images/arrow_bottom.svg" alt="arrow icon" />
+                <div class="option">
+                  <div onclick="show('Denmark')">Denmark</div>
+                  <div onclick="show('Italy')">Italy</div>
+                  <div onclick="show('United Kingdom')">United Kingdom</div>
+                  <div onclick="show('Germany')">Germany</div>
+                </div>  
               </div>
             </div>
             <div class="search-button">
@@ -275,7 +281,7 @@
 <!-- https://www.youtube.com/watch?v=3t2H8aqOkeQ -->
 <!-- https://www.youtube.com/watch?v=RroDdybvu5s -->
 
-<!-- NOTE 3/10 
-1. List ngang cho scroll
-2. mấy cái hình cho wrap, height: auto; max-width: 100%
+<!-- NOTE 10/10
+  1. còn select, style option, vs icon arrow bị ko ăn
+  
 -->

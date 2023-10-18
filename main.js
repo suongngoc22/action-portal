@@ -20,6 +20,28 @@ for (var i = 0; i < menu_links_items.length; i++) {
   });
 }
 
+// dot mouse
+const body = document.querySelector("body");
+body.addEventListener("mousemove", (e) => {
+  const clientX = e.clientX;
+  const clientY = e.clientY;
+  const dot = document.querySelector(".dot");
+  dot.style.setProperty('--x', clientX + 'px');
+  dot.style.setProperty('--y', clientY + 'px');
+})
+
+/// Dropdown
+const dropdownSearch = document.querySelector(".search-dropdown");
+const textBoxSearch = document.querySelector(".textBox");
+
+textBoxSearch.addEventListener("click", () => {
+  dropdownSearch.classList.toggle('active');
+})
+
+function show(anything) {
+  textBoxSearch.value = anything;
+}
+
 // render jobs
 const jobs = [
   {
